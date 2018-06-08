@@ -52,3 +52,17 @@ class Solution {
     }
 }
 ```
+
+Python:
+
+```
+class Solution:
+    def numJewelsInStones(self, J, S):
+        """
+        :type J: str
+        :type S: str
+        :rtype: int
+        """
+        info = set(J)
+        return sum( c in info for c in S )
+```
